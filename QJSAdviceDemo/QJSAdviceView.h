@@ -18,7 +18,7 @@
 @interface QJSAdviceView : UIView<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic, strong) UITableView *firstTable;
 @property (nonatomic, assign) NSInteger memoryTime;
-@property (nonatomic, retain) NSTimer *rooptimes;
+@property (nonatomic, strong) NSTimer *rooptimes;
 @property (nonatomic, strong) NSMutableArray *tableArrays;
 @property (nonatomic, weak)id <QJSAdviceViewDelegate> delegate;
 
